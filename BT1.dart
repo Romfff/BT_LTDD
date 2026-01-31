@@ -23,17 +23,17 @@ void bai2() {
 
   String s = n.toString();
 
-  // a. Số chữ số
+
   print("Số chữ số: ${s.length}");
 
-  // b. Tổng các chữ số
+
   int tong = 0;
   for (var c in s.split('')) {
     tong += int.parse(c);
   }
   print("Tổng các chữ số: $tong");
 
-  // c. Có chữ số lẻ không
+
   bool coSoLe = false;
   for (var c in s.split('')) {
     if (int.parse(c) % 2 != 0) {
@@ -63,20 +63,20 @@ void bai3() {
     ds.add(int.parse(stdin.readLineSync()!));
   }
 
-  // a. Xuất danh sách
+
   print("Danh sách: $ds");
 
-  // b. Tính tổng
+
   int tong = ds.reduce((a, b) => a + b);
   print("Tổng các phần tử: $tong");
 
-  // c. Số nguyên tố
+
   print("Các số nguyên tố:");
   for (var x in ds) {
     if (laSoNguyenTo(x)) print(x);
   }
 
-  // d. Tìm / thêm phần tử
+
   print("Nhập giá trị cần tìm: ");
   int x = int.parse(stdin.readLineSync()!);
 
